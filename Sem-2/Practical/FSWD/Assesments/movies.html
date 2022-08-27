@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+
+    <style>
+        h1{
+            font-family: Courier;
+            color: black;
+            font-size: 40px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        #movieDropDown{                       
+            align-items: center;
+            border: 2px solid black ;
+            border-radius: 15px;
+            background-color: teal;
+            color: black;
+            font-size: 30px;
+            margin-top: 30px;
+            padding: 10px;
+        }
+        #movieDropDown:hover{
+            cursor: pointer;
+        }
+        table{
+            border: 2px solid black;
+            border-radius: 14px;
+        }
+        th{
+            font-family: Courier;
+            color: black;
+            font-size: 30px;            
+            font-weight: bolder;
+        }
+        td{
+            font-family: Courier;
+            color: black;
+            font-size: 20px;            
+            font-weight: bolder;
+        }
+        img{
+            height: 150px;
+            width: 200px;
+        }
+        
+
+    </style>
+</head>
+<body >
+
+    <h1>Upcoming <span style="color: red;">movies</span> on your nearest Cinema halls</h1>
+    <hr>
+
+    <center>
+        <select name="" id="movieDropDown" onchange="myFun(this)">
+            <option  value="#">Select movies here</option>
+            <option value="movieFeedback.html?Thor_Love_and_Thunder">Thor Love and Thunder</option>
+            <option value="movieFeedback.html?Avengers_Endgame">Avengers Endgame</option>
+            <option value="movieFeedback.html?Black_Panther">Black Panther</option>
+            <option value="movieFeedback.html?Captain_America_and_the_winter_Solider">Captain America and the winter Solider</option>
+            <option value="movieFeedback.html?Ironman">Ironman 3</option>
+            <option value="movieFeedback.html?Black_Widow">Black Widow</option>
+        </select>
+
+        <table border="1" style="margin-top: 50px;">
+            <tr>
+                <th>Title</th>
+                <th>Picture</th>
+                <th>Information(Movie Type)</th>
+            </tr>
+            <tr>
+                <td>Thor Love and Thunder</td>
+                <td><img src="Thor.jpg" alt=""></td>
+                <td>Comedy, Romantic, Action</td>
+            </tr>
+            <tr>
+                <td>Avengers Endgame</td>
+                <td><img src="spiderman.jpg" alt=""></td>
+                <td>Action, Thrill</td>
+            </tr>
+            <tr>
+                <td>Black Panther</td>
+                <td><img src="Transformer.jpg" alt=""></td>
+                <td>Adventurous, Fighting </td>
+            </tr>
+            <tr>
+                <td>Captain America and the winter Solider</td>
+                <td><img src="batman.jpg" alt=""></td>
+                <td>Political Drama</td>
+            </tr>
+            <tr>
+                <td>Ironman 3</td>
+                <td><img src="Ironman.jpg" alt=""></td>
+                <td>SciFi movie</td>
+            </tr>
+            <tr>
+                <td>Deadpool</td>
+                <td><img src="Deadpool.jpg" alt=""></td>
+                <td>Funny, Comedy, Story</td>
+            </tr>
+            
+        </table>
+    </center>
+
+
+    <script>
+
+        function myFun(data)
+        {
+            window.location = data.value;            
+        }
+        
+    </script>
+
+
+    
+</body>
+</html>

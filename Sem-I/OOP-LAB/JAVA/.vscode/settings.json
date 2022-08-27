@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Thread",
+        "Generics",
+        "ExceptionHandling",
+        "Collections",
+        "FileHandling"
+    ]
+}

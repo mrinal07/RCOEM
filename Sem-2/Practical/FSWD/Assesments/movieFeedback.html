@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <table border="1" >
+            <tr>
+                <th>
+                    <label for="">First Name</label>
+                    <input type="text" name="" id="first" placeholder="First Name">
+                </th>
+            </tr>            
+            <tr>
+                <th>
+                    <label for="">Last Name</label>
+        <input type="text" name="" id="last" placeholder="Last Name">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="">Email</label>
+                    <input type="text" name="" id="email" placeholder="Email">
+                </th>
+            </tr>
+            <tr>
+                <th align="center">
+                    <input type="radio" name="radioBTN" id="funny" value="Funny">Funny
+                    <input type="radio" name="radioBTN" id="action" value="Action">Action
+                    <input type="radio" name="radioBTN" id="thrilling" value="Thrilling">Thrilling
+                    <input type="radio" name="radioBTN" id="adventurous" value="Adventurous">Adventurous
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="">Rate the movie</label>
+                    <textarea name="" id="rate" cols="30" rows="5"></textarea>
+                </th>
+            </tr>
+        </table>
+
+        <br><br><br>
+
+        <button onclick="resetFun()" >Reset</button>
+        <button onclick="homeFun()">Home</button>
+        <button onclick="submitFun()">Submit</button>
+        
+       
+    </form>
+    <script>
+
+        function resetFun(){
+            window.location = "movieFeedback.html"
+        }
+
+        function homeFun(){
+            window.location = "movieFeedback.html"
+        }
+
+        function submitFun(){
+
+            const qString =  window.location.search;
+            var url = new URLSearchParams(qString);
+
+            var first = document.getElementById('first').value;            
+            var movie= url
+            var rate = document.getElementById('rate').value;
+            
+            var type = document.querySelector('input[name="radioBTN"]:checked').value
+
+            var str = "Hello "+first+" Thank you for feedback. \nThe movie "+movie+"> has been rated "+rate+" by you. \nThe movie type is "+type;
+
+            alert(str)
+
+        }
+
+    </script>
+</body>
+</html>

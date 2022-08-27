@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-size: 30px;
+      }
+    </style>
+
+    <script>
+      // alert("Welcome to Javascript World");
+      // confirm("Are you sure?");
+      // let ans = prompt("Please enter your name")
+
+      // alert("Hello "+ans+" how are you?")
+
+    //   let a = Number(prompt("Enter first number"));
+    //   let b = Number(prompt("Enter second number"));
+    </script>
+
+    <style>
+      .btn {
+        background-color: purple;
+        color: yellow;
+        padding: 10px;
+        border-radius: 10px;
+        font-family: cursive;
+        font-size: 20px;        
+        font-weight: bold;
+        border: 3px solid yellow;
+      }
+      .btn:hover{
+        cursor: pointer;
+        border: 3px solid purple;
+        background-color: yellow;
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>We are learning JS Practical</h1>
+    <p>
+      <b>Js types</b>
+      1. External 2. Embedded 3. Inline (onclick)
+    </p>
+
+    <p>
+      <b>Data types:</b>
+      1. String 2. Integer 3. Boolean 4. Function 5. Object
+    </p>
+
+    <p>
+      <b>Syntax</b>
+      1. var i = 123; 2. var x = "123"; 3. var x = true;
+    </p>
+
+    <script>
+      // Normal Function
+      function demo(x, y) {
+        return x * y;
+      }
+
+      // Anonymous Function
+      var result = function (x, y) {
+        return x * y;
+      };
+
+      document.writeln("result(10,20)" + result(10, 20));
+      document.writeln("||");
+
+      document.writeln("demo(10,20)" + demo(10, 20));
+      document.writeln("||");
+
+      document.writeln("<b>Today's date: " + new Date() + "</b>");
+      document.writeln("||");
+
+      let windowBtn;
+      function openWindow() {
+        windowBtn = window.open("https://www.w3schools.com");
+      }
+      function closeWindow() {
+        windowBtn.close();
+      }
+
+      function sum(a, b) {
+        var c = a + b;
+        alert(c);
+      }
+    </script>
+
+    <br />
+    <br />
+
+    <input
+      type="button"
+      class="btn"
+      value="Open Window"
+      onclick="openWindow()"
+    />
+    <input
+      type="button"
+      class="btn"
+      value="Close Window"
+      onclick="closeWindow()"
+    />
+
+    <input
+      type="button"
+      class="btn"
+      value="Find Sum of two numbers"
+      onclick="sum(a,b)"
+    />
+  </body>
+</html>

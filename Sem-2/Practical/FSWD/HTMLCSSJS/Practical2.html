@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 2</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style>
+        body
+        {
+            background-color: springgreen
+        }
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 60px;
+            font-weight: lighter;
+            color: crimson;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            font-size: 40px;
+            text-align: center;
+            border: 10px solid red;
+            border-style: dotted;
+        }
+        .b1{            
+            background-color: yellow;
+            border-radius: 20px;
+            border-color: purple;
+            border-style: dotted;
+            color: purple;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-shadow: 5px 5px black;
+            transition: width 2s, height 2s, transform 2s;           
+
+        }
+        .b2{
+            margin-left: 20px;
+            background-color: yellow;
+            border-radius: 20px;
+            border-color: purple;
+            border-style: dashed;
+            color: purple;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-shadow: 5px 5px chocolate;
+            transition: width 2s, height 2s, transform 2s;
+        }
+        .b3{
+            margin-left: 20px;
+            background-color: yellow;
+            border-radius: 20px;
+            border-color: purple;            
+            color: purple;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-shadow: 5px 5px dodgerblue;
+            transition: transform 1s;
+        }
+        .b1:hover , .b2:hover , .b3:hover{
+            transform: rotate(360deg);
+            cursor: pointer;
+        }
+        
+
+
+
+    </style>
+</head>
+<body >
+<div>
+    
+    <h1>
+        We are learning CSS Practical
+    </h1>
+
+    <p style="font-family:cursive ; color: snow; font-size: 28px; border: 3px solid black; border-style: dashed; font-weight: bold; text-align: right;">
+        External CSS <br>
+        Internal CSS <br>
+        Inline CSS <br>
+        Import CSS <br>
+    </p>
+</div>
+
+    <div>
+        <input type="button" value="Button1" class="b1" >
+        <input type="button" value="Button2" class="b2" >
+        <input type="button" value="Button3" class="b3" >
+    </div>
+
+    <div>
+        <a href="Practical1.html" target="_blank">
+            <input type="submit" value="Submit" id="subBtn">
+        </a>
+    </div>
+
+
+
+    
+    
+</body>
+</html>
